@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Creepster');
+@import url('https://fonts.googleapis.com/css?family=Monoton|VT323');
 *{
     margin: 0;
     padding:0;
@@ -7,12 +7,15 @@
 
 body{
 
-    background: url("ct.jpg")no-repeat left center fixed;
+    background: url("cp.jpg")no-repeat left center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 
+}
+.icon{
+    font-size: 2em;
 }
 .banner{
     display: flex;
@@ -22,22 +25,27 @@ body{
     background-color: black;
     opacity: 0.5;
     color:whitesmoke;
-font-family: 'Creepster', cursive;
-
-
+font-family: 'VT323', monospace;
+font-size: 1.5em;
 }
+
+#hour{
+    margin-right: 5px;}
+    #date{
+    margin-left: 5px;}
+
 .box{
     width: 400px;
+    padding-top: 10px;
 border-radius: 5px;
 margin-left:8.5%;
 margin-top:25vh;
 margin-bottom: auto;
-font-size: 2.5em;
+font-size: 3em;
 color:whitesmoke;
 text-align: center;
 background-color: rgba(100,100,100,0.5);
-font-family: 'Creepster', cursive;
-
+font-family: 'VT323', monospace;
 
 }
 .show{
@@ -50,17 +58,18 @@ font-family: 'Creepster', cursive;
     font-size: 16px;
 }
 .a{
-padding:5px 0px;
+padding:5px 5px;
     display: flex;
     justify-content: space-around;
     font-size: 0.5em;
     font-weight: lighter;
 }
 #panel{
-    margin-top: 40px;
+    margin-top: 80px;
+    background-color: rgba(100,100,100,0.3);
 }
 
-
+/*
 @media only screen and (max-width: 1206px ) {
 
 .box{
@@ -91,7 +100,7 @@ margin-left:10%;
 .container{
     font-size: 12px;
 }
-
+*/
 @media only screen and (max-width: 400px ) {
 
 .box{
