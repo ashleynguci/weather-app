@@ -3,42 +3,45 @@
     <head>
         <title>Weather App</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- weather icons -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="typed.js-master/lib/typed.min.js" type="text/javascript"></script>
     </head>
     <body>
 
     <div class = "banner">
-        <div id = "name">Local Weather</div>
-        <div id="time"><span id="hour">07:30</span>|<span id = "date">15.10.2018</span></span></div>
+        <div id = "name">Hi I'm <span id="type"></span></div>
+        <div id="time"><span id = "hour"></span><span id = "minute"></span><span id = "second"></span>
+        |<span id = "date"></span><span id = "month"></span><span id = "year"></span></div>
     </div>
 
     <div class="container">
         <div class="box">
-            <div id="city">Turku, Finland</div>
+            <div id="city"></div>
             <div class="show">
-                <div id="weather">30</div>
+                <div id="weather"></div>
                 <div id="status">
-                    <p>Clear Sky</p>
-                    <i class="icon" class="wi wi-night-sleet"></i>
+                    <i id="icon" class="wi wi-owm-200"></i>
+                    <p></p>
                 </div>
             </div>
             <div id = "panel">
-            <div class="a">
+            <div id="kind" class="feature">
                 <div class="title" id="Humi">Humidity
                 </div>
                 <div class="title" id="wind">Wind Speed
                 </div>
-                <div class="title" id="feel">Feel like
-                </div>
+
             </div>
 
-            <div class="a">
+            <div class="feature">
                 <div class="no" id="Humi1">75%
                 </div>
                 <div class="no" id="wind1">14mh/s
                 </div>
-                <div class="no" id="feel1">30
-                </div>
+
             </div>
 
 
