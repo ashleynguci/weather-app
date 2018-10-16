@@ -25,7 +25,7 @@ var status = document.getElementById("status");
             var lat = jsonIp.loc.split(",")[0];
                 var lon = jsonIp.loc.split(",")[1];
 
-                var weatherApi = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=8e1880f460a20463565be25bc573bdc6`;
+                var weatherApi = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=8e1880f460a20463565be25bc573bdc6`;
                 //calling openweathermap api function
                 weatherRequest(weatherApi);
 
