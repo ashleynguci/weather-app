@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|VT323');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background: url("cp.jpg")no-repeat left center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+#weather{
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.6em;
+}
+#status{
+font-size: 0.5em;
+}
+#icon{
+    font-size: 3em;
+padding-bottom: 10px;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 10px;
+    background-color: black;
+    opacity: 0.5;
+    color:whitesmoke;
+font-family: 'VT323', monospace;
+font-size: 1.5em;
+}
+
+.box{
+    width: 400px;
+    padding-top: 10px;
+border-radius: 5px;
+margin-left:8.5%;
+margin-top:20vh;
+margin-bottom: auto;
+font-size: 3em;
+color:whitesmoke;
+text-align: center;
+background-color: rgba(100,100,100,0.5);
+font-family: 'VT323', monospace;
+
+}
+.show{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.container{
+    display: flex;
+    font-size: 16px;
+}
+.feature{
+padding:5px 5px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.5em;
+    font-weight: lighter;
+}
+
+#panel{
+    margin-top: 10px;
+    background-color: rgba(100,100,100,0.3);
+}
+
+/*
+@media only screen and (max-width: 1206px ) {
+
+.box{
+    width: 370px;
+margin-left:8%;
+}
+.container{
+    font-size: 13px;
+}
+@media only screen and (max-width: 1068px ) {
+
+.box{
+    width: 320px;
+margin-left:8%;
+
+}
+.container{
+    font-size: 13px;
+}
+@media only screen and (max-width: 800px ) {
+
+.box{
+    width: 300px;
+margin-left:10%;
+
+
+}
+.container{
+    font-size: 12px;
+}
+*/
+@media only screen and (max-width: 400px ) {
+
+.box{
+
+margin-left:0%;
+
+}
+}
+

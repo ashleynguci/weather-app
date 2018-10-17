@@ -10,7 +10,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-
   body .banner {
     display: flex;
     justify-content: space-between;
@@ -30,11 +29,9 @@ body {
     color: whitesmoke;
     font-family: 'VT323', monospace;
     font-size: 1.5em; }
-
   body .container {
     display: flex;
     font-size: 16px; }
-
     body .container .box {
       width: 400px;
       padding-top: 10px;
@@ -47,31 +44,25 @@ body {
       text-align: center;
       background-color: rgba(100, 100, 100, 0.5);
       font-family: 'VT323', monospace; }
-
       body .container .box .show {
         display: flex;
         justify-content: space-around;
         margin-top: 20px;
         margin-bottom: 20px; }
-
         body .container .box .show #weather {
           display: flex;
           height: 120px;
           align-items: center;
           justify-content: center;
           font-size: 2.6em; }
-
         body .container .box .show #status {
           font-size: 0.5em; }
-
         body .container .box .show #icon {
           font-size: 3em;
           padding-bottom: 10px; }
-
       body .container .box #panel {
         margin-top: 10px;
         background-color: rgba(100, 100, 100, 0.3); }
-
         body .container .box #panel .feature {
           padding: 5px 5px;
           display: flex;

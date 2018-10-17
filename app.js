@@ -1,5 +1,4 @@
 window.onload= function(){
-
     //set Variables
 var current =  new Date();
 var ipUrl = "https://ipinfo.io/json"
@@ -10,11 +9,10 @@ var wind = document.getElementById("wind1");
 var feel = document.getElementById("feel1");
 var status = document.getElementById("status");
 
- //calling ipinfo.io/json function
 httpRequest(ipUrl);
- //request to ipinfo.io/json
+//request to ipinfo.io/json
 function httpRequest(url, callback) {
-        var httpReqIp = new XMLHttpRequest();
+     var httpReqIp = new XMLHttpRequest();
         httpReqIp.open("GET", url, true)
         httpReqIp.onreadystatechange = function() {
             if(httpReqIp.readyState == 4 && httpReqIp.status == 200) {
@@ -23,44 +21,33 @@ function httpRequest(url, callback) {
                 var city = jsonIp.city;
                 var country = jsonIp.country;
                 location.innerHTML = `${city}, ${country}`;
-            var lat = jsonIp.loc.split(",")[0];
+                var lat = jsonIp.loc.split(",")[0];
                 var lon = jsonIp.loc.split(",")[1];
 
                 var weatherApi = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=8e1880f460a20463565be25bc573bdc6`;
-                //calling openweathermap api function
-                weatherRequest(weatherApi);
 
+                weatherRequest(weatherApi);
             }
         }
         httpReqIp.send();
     }
-
-    function weatherRequest(url,callback){
+function weatherRequest(url,callback){
         var httpWeather = new XMLHttpRequest();
         httpWeather.open("Get",url,true);
         httpWeather.onreadystatechange= function() {
             if(httpWeather.readyState == 4 && httpWeather.status == 200){
                 var jsonWeather = JSON.parse(httpWeather.responseText);
-                /*var sunSet = jsonWeather.sys.sunset;
-                var timeNow = Math.round(current / 1000);
-                console.log(timeNow + "<" + sunSet +" = "+(timeNow < sunSet))
-                dayNight = (timeNow < sunSet) ? "day" : "night";*/
                 var temp = Math.round(jsonWeather.main.temp - 273.15);
-                degree.innerHTML = temp +'&#8451';
+                degree.innerHTML = temp +'&deg;C';
                 humi.innerHTML = jsonWeather.main.humidity+"%";
                 wind.innerHTML = jsonWeather.wind.speed +"mph";
                 var desc = jsonWeather.weather[0].description;
                 var id = jsonWeather.weather[0].id;
                 status.innerHTML = `<i id="icon" class="wi wi-owm-${id}"></i><p>${desc}</p>`;
-
-
-
-
             }
     }
     httpWeather.send();
 }
-
     var typed = new Typed('#type', {
     strings:["Ashleynguci","a web developer","happy to know you"],
     typeSpeed :120,
@@ -69,7 +56,7 @@ function httpRequest(url, callback) {
     showCursor: false,
   });
 
- function clock() {
+function clock() {
 const fullDate = new Date();
 var hours = fullDate.getHours();
 var mins = fullDate.getMinutes();
@@ -92,10 +79,7 @@ document.getElementById('second').innerHTML= secs;
 document.getElementById('year').innerHTML= year;
 document.getElementById('date').innerHTML= date+ ".";
 document.getElementById('month').innerHTML= month+ ".";
-
 }
-setInterval(clock,50);
-
-
+setInterval(clock,60);
 }
 
