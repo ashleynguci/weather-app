@@ -7,5 +7,6 @@ weatherRequest @ app.js:60
 
 I change 1 link from http to https. And error was fixed.
 
-<img width="1277" alt="weatherapp" src="https://user-images.githubusercontent.com/40316179/47073640-640a5880-d201-11e8-9795-80fba503928d.png">
+<img width="1280" alt="screen shot 2018-10-18 at 00 29 14" src="https://user-images.githubusercontent.com/40316179/47117434-fd228900-d26c-11e8-9e15-79fd8cb2f610.png">
+
 
