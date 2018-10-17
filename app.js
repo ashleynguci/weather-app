@@ -1,18 +1,19 @@
 window.onload= function(){
-    //setNamee
+
+    //set Variables
 var current =  new Date();
-    var ipUrl = "https://ipinfo.io/json"
-    var location = document.getElementById("city");
+var ipUrl = "https://ipinfo.io/json"
+var location = document.getElementById("city");
 var degree = document.getElementById("weather");
 var humi = document.getElementById("Humi1");
 var wind = document.getElementById("wind1");
 var feel = document.getElementById("feel1");
 var status = document.getElementById("status");
 
-    //calling ipinfo.io/json function
-    httpRequest(ipUrl);
-    //request to ipinfo.io/json
-    function httpRequest(url, callback) {
+ //calling ipinfo.io/json function
+httpRequest(ipUrl);
+ //request to ipinfo.io/json
+function httpRequest(url, callback) {
         var httpReqIp = new XMLHttpRequest();
         httpReqIp.open("GET", url, true)
         httpReqIp.onreadystatechange = function() {
